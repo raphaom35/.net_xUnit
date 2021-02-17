@@ -9,7 +9,7 @@ namespace Alura.LeilaoOnline.Tests
     public class LeilaoTerminaPregao
     {
         [Fact]
-        public void RetornaMaiorValorDadoLeilaoComPeloNenosUmLance()
+        public void RetornaZeroDadoLeilaoSemLance()
         {
             //Arranje - Cenário
             var leilao = new Leilao("camisa psg antiga Romario");
@@ -24,12 +24,19 @@ namespace Alura.LeilaoOnline.Tests
             Assert.Equal(valorEsperado, valorObitito);
 
         }
-
+        [Fact]
+        public void LancaIvalidOparationEcptionPregraoNaoIniciado()
+        {
+            //Arranje - Cenário
+            var leilao = new Leilao("camisa psg antiga Romario");
+                //Act - metodo sobre teste     
+            Assert.Throws<System.InvalidOperationException>(()=> leilao.TerminaPregao());           
+        }
         [Theory]
         [InlineData(1200,new double[] { 800, 900, 1000, 1200 })]
         [InlineData(1000,new double[] { 800, 900, 1000, 990 })]
         [InlineData(800,new double[] { 800 })]
-        public void RetornaZeroDadoLeilaoSemLance(double valoresperado,double[] ofertas)
+        public void RetornaMaiorValorDadoLeilaoComPeloNenosUmLance(double valoresperado,double[] ofertas)
         {
             //Arranje - Cenário
             var leilao = new Leilao("camisa psg antiga Romario");

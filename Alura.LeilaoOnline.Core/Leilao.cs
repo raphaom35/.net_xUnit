@@ -50,6 +50,10 @@ namespace Alura.LeilaoOnline.Core
 
         public void TerminaPregao()
         {
+            if (Estado != EstadoLeilao.LeilaoEmAdameto)
+            {
+                throw new System.InvalidOperationException();
+            }
             Ganhador = Lances
                 .DefaultIfEmpty(new Lance(null,0))
                 .OrderBy(l => l.Valor).LastOrDefault();
