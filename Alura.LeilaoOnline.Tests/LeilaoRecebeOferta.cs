@@ -9,16 +9,41 @@ namespace Alura.LeilaoOnline.Tests
 {
     public class LeilaoRecebeOferta
     {
+        [Fact]
+        public void NaoaceitaProximoLanceMaesmolcienteRealizouOUltimoLance()
+        {
+            var leilao = new Leilao("camisa psg antiga Romario");
+            leilao.IniciaPregao();
+            var fulano = new Interessada("Fulano", leilao);
+
+            leilao.RecebeLance(fulano, 800);
+            //Act - metodo sobre teste
+            leilao.RecebeLance(fulano, 1000);
+
+            leilao.TerminaPregao();
+            //Assert
+            var valorObitito = leilao.Lances.Count();
+            Assert.Equal(1, valorObitito);
+        } 
         [Theory]
         [InlineData(4, new double[] { 100, 1200,1400,1300 })]
         [InlineData(2,new double[] { 800,900 })]
         public void NaoPerminitirNovosLancesDAdosLeilaoFinalizado(int qtdEsperada,double[] ofertas)
         {
             var leilao = new Leilao("camisa psg antiga Romario");
+            leilao.IniciaPregao();
             var fulano  =new Interessada("Fulano", leilao);
-            foreach (var valor in ofertas)
+            var maria = new Interessada("Maria", leilao);
+            for (int i = 0; i < ofertas.Length; i++)
             {
-                leilao.RecebeLance(fulano, valor);
+                if ((i % 2) == 0)
+                {
+                    leilao.RecebeLance(fulano, ofertas[i]);
+                }
+                else
+                {
+                    leilao.RecebeLance(maria, ofertas[i]);
+                }
             }
 
             leilao.TerminaPregao();

@@ -13,7 +13,7 @@ namespace Alura.LeilaoOnline.Tests
         {
             //Arranje - Cenário
             var leilao = new Leilao("camisa psg antiga Romario");
-
+            leilao.IniciaPregao();
             //Act - metodo sobre teste
             leilao.TerminaPregao();
 
@@ -33,11 +33,19 @@ namespace Alura.LeilaoOnline.Tests
         {
             //Arranje - Cenário
             var leilao = new Leilao("camisa psg antiga Romario");
+            leilao.IniciaPregao();
             var fulano = new Interessada("Fulano", leilao);
-
-            foreach (var valor in ofertas)
+            var maria = new Interessada("Maria", leilao);
+            for (int i = 0; i < ofertas.Length; i++)
             {
-                leilao.RecebeLance(fulano, valor);
+                if ((i % 2) == 0)
+                {
+                    leilao.RecebeLance(fulano, ofertas[i]);
+                }
+                else
+                {
+                    leilao.RecebeLance(maria, ofertas[i]);
+                }
             }
             
             //Act - metodo sobre teste

@@ -6,12 +6,14 @@ namespace Alura.LeilaoOnline.Core
 
     public enum EstadoLeilao
     {
+        LeilaAntesDoPregao,
         LeilaoEmAdameto,
         LeilaoFinalizado
     }
 
     public class Leilao
     {
+        private Interessada _ultimoCliente;
         private IList<Lance> _lances;
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
@@ -24,20 +26,26 @@ namespace Alura.LeilaoOnline.Core
         {
             Peca = peca;
             _lances = new List<Lance>();
-            Estado = EstadoLeilao.LeilaoEmAdameto;
+            Estado = EstadoLeilao.LeilaAntesDoPregao;
+        }
+        private bool NovoLanceAceito(Interessada cliente, double valor)
+        {
+            return (Estado == EstadoLeilao.LeilaoEmAdameto) && (cliente != _ultimoCliente);
         }
 
         public void RecebeLance(Interessada cliente, double valor)
         {
-            if (Estado == EstadoLeilao.LeilaoEmAdameto)
-            {
-                _lances.Add(new Lance(cliente, valor));
+            if (NovoLanceAceito(cliente,valor))
+            {         
+                    _lances.Add(new Lance(cliente, valor));
+                    _ultimoCliente = cliente;
+  
             }
         }
 
         public void IniciaPregao()
         {
-
+            Estado = EstadoLeilao.LeilaoEmAdameto;
         }
 
         public void TerminaPregao()
