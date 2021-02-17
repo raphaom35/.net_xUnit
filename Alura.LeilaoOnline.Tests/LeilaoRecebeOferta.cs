@@ -12,7 +12,8 @@ namespace Alura.LeilaoOnline.Tests
         [Fact]
         public void NaoaceitaProximoLanceMaesmolcienteRealizouOUltimoLance()
         {
-            var leilao = new Leilao("camisa psg antiga Romario");
+            IModalidadeAvaliacao modalidade = new MaiorValor();
+            var leilao = new Leilao("camisa psg antiga Romario", modalidade);
             leilao.IniciaPregao();
             var fulano = new Interessada("Fulano", leilao);
 
@@ -30,7 +31,8 @@ namespace Alura.LeilaoOnline.Tests
         [InlineData(2,new double[] { 800,900 })]
         public void NaoPerminitirNovosLancesDAdosLeilaoFinalizado(int qtdEsperada,double[] ofertas)
         {
-            var leilao = new Leilao("camisa psg antiga Romario");
+            IModalidadeAvaliacao modalidade = new MaiorValor();
+            var leilao = new Leilao("camisa psg antiga Romario", modalidade);
             leilao.IniciaPregao();
             var fulano  =new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);

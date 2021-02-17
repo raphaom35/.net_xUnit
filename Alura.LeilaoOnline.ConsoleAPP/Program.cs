@@ -23,7 +23,8 @@ namespace Alura.LeilaoOnline.ConsoleAPP
         private static void LeilaoComVariosLances()
         {
             //Arranje - Cenário
-            var leilao = new Leilao("camisa psg antiga Romario");
+            IModalidadeAvaliacao modalidade = new MaiorValor();
+            var leilao = new Leilao("camisa psg antiga Romario", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
@@ -43,7 +44,8 @@ namespace Alura.LeilaoOnline.ConsoleAPP
         private static void LeilaoComApenasUmLance()
         {
             //Arranje - Cenário
-            var leilao = new Leilao("camisa psg antiga Romario");
+            IModalidadeAvaliacao modalidade = new MaiorValor();
+            var leilao = new Leilao("camisa psg antiga Romario", modalidade);
             var fulano = new Interessada("Fulano", leilao);
          
             leilao.RecebeLance(fulano, 800);

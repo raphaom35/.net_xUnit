@@ -7,8 +7,13 @@
 
         public Lance(Interessada cliente, double valor)
         {
-            Cliente = cliente;
-            Valor = valor;
+            if (valor < 0)
+            {
+                throw new System.ArgumentException();
+            }
+                Cliente = cliente;
+                Valor = valor;
+            
         }
     }
 }
