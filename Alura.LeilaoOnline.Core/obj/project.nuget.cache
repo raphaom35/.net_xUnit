@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "nLAiWU1dFfmeHj0Aa8bfO9Zk/YLWYYYfazohE7pJNF3yNifs91EXZ8r62RLXlozhXMDZgKqr5vHteil7oGD+dQ==",
+  "success": true,
+  "projectFilePath": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

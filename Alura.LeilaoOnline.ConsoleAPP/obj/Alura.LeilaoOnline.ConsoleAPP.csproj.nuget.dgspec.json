@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.ConsoleAPP\\Alura.LeilaoOnline.ConsoleAPP.csproj": {}
+  },
+  "projects": {
+    "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.ConsoleAPP\\Alura.LeilaoOnline.ConsoleAPP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.ConsoleAPP\\Alura.LeilaoOnline.ConsoleAPP.csproj",
+        "projectName": "Alura.LeilaoOnline.ConsoleAPP",
+        "projectPath": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.ConsoleAPP\\Alura.LeilaoOnline.ConsoleAPP.csproj",
+        "packagesPath": "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\",
+        "outputPath": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.ConsoleAPP\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RaphaelOliveiraMarti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj": {
+                "projectPath": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+        "projectName": "Alura.LeilaoOnline.Core",
+        "projectPath": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+        "packagesPath": "C:\\Users\\RaphaelOliveiraMarti\\.nuget\\packages\\",
+        "outputPath": "D:\\Cursos\\C# TDD\\Alura.LeilaoOnline.ProjetoInicial\\Alura.LeilaoOnline\\Alura.LeilaoOnline.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RaphaelOliveiraMarti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
